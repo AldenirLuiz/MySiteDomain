@@ -5,8 +5,24 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+header {
+    background-color: aqua;
+}
+a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+a:hover {
+    color: darkgray;
+    background-color: #d7fca6;
+    border-radius: 8px;
+}
+/* class */
+
 .tarja {
     background-color: darkgray;
+    border-bottom: 2px #d7fca6 solid;
     display: block;
     block-size: auto;
     width: auto;
@@ -15,22 +31,36 @@ body {
     margin: 0px;
 }
 
-.pageTitle {
-    display: flex;
-    flex-direction: row;
+.link {
+    color: #d7fca6;
+    padding: 10px 0px;
+}
+.link::after {
+    background-color: aqua;
+    
 }
 
+/* id's */
 #ser {
-    color: chartreuse; 
+    color: #d7fca6; 
     padding: 0px;
     margin: 0px;
+    float: left;
 }
 #dev {
     color: bisque;
     padding: 0px;
     margin: 0px;
+    float: left;
 }
 
-header {
-    background-color: aqua;
+#Title {
+    width: 720px;
+    margin: 0 auto;
+}
+
+#menu {
+    float: right;
+    height: 20px;
+    width: auto;
 }
