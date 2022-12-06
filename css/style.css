@@ -10,21 +10,16 @@ header {
 }
 a {
     text-decoration: none;
-    margin: 10px;
-    padding: 10px;
 }
-a:hover {
-    color: darkgray;
-    background-color: #d7fca6;
-    border-radius: 8px;
-}
+
+
 /* class */
 
 .tarja {
     background-color: darkgray;
     border-bottom: 2px #d7fca6 solid;
-    display: block;
-    block-size: auto;
+    display: flex;
+    flex-direction: row;
     width: auto;
     height: 40px;
     padding: 10px;
@@ -33,11 +28,26 @@ a:hover {
 
 .link {
     color: #d7fca6;
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    height: 10px;
     padding: 10px 0px;
+    justify-content: center;
 }
-.link::after {
-    background-color: aqua;
-    
+.link:hover {
+    padding: 4;
+    margin: 4;
+    color: #fdc356;
+    border: 2px solid #d7fca6;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.page_reader {
+    width: 720px;
+    margin: 10px auto 10px auto;
+
 }
 
 /* id's */
@@ -48,19 +58,37 @@ a:hover {
     float: left;
 }
 #dev {
-    color: bisque;
+    color: #fdc356;
     padding: 0px;
     margin: 0px;
     float: left;
 }
 
-#Title {
+#title {
     width: 720px;
     margin: 0 auto;
 }
 
 #menu {
+    display: flex;
+    flex-direction: row;
     float: right;
-    height: 20px;
-    width: auto;
+    height: 200px;
+    width: 200;
+}
+
+#post {
+    background-color: #fff;
+}
+
+#post_0 {
+    display: block;
+    float: right;
+}
+
+#picture_post_0 {
+    display: block;
+    float: right;
+    width: 180px;
+    height: 120px;
 }
